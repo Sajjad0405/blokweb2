@@ -1,0 +1,350 @@
+body {
+    font-family: 'Nexa';
+    background-color: #fff;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: #F4E6D8;
+}
+
+header {
+    background: url(images/vacation%201.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    border-radius: 0.4em;
+    padding: 0.8em;
+    font-size: calc(3.5vw + .8em);
+    color: white;
+    margin-right: auto;
+    margin-left: 0;
+    width: 6em;
+    margin-top: 0;
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+
+/*
+
+legend {
+    font-weight: bold;
+}
+
+fieldset {
+
+    background-color: #F4E6D8;
+    border: none;
+    border-radius: 5px;
+}
+
+fieldset button {
+    background-color: gainsboro;
+    padding: 0.417em;
+    margin: 1.25em;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 8.33em;
+    height: 4em;
+    display: block;
+    text-align: center;
+
+}
+
+fieldset input[type="submit"]:hover {
+    color: white;
+    background-color: #5e40b8;
+    box-shadow: none;
+}
+
+fieldset input[type="submit"]:active {
+    color: white;
+    background-color: #2800a0;
+    box-shadow: none;
+}
+
+input[type="submit"] {
+    padding: 0.833em 2.083em 1em;
+    background-color: #ff3268;
+    box-shadow: inset 0 -5px #ca2b55;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+*/
+
+.zoeken {
+    background-color: #2800a0;
+}
+
+section {
+    padding: 1em;
+}
+
+section div {
+    background-color: #F4E6D8;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 1.3em;
+    border-radius: 0.5em 0.5em 0em 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+section div:nth-child(1) {
+    overflow-x: hidden;
+    margin-bottom: -1em;
+    background-color: white;
+}
+
+section div:nth-child(1) h2 {
+    color: #ff3268;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+section:nth-child(2) div:nth-child(1) h2 {
+    color: #2800a0;
+}
+
+section:nth-child(3) div:nth-child(1) h2 {
+
+    color: #00d66c;
+}
+
+.pink-background {
+    background-color: #ff3268;
+    border-radius: 0em;
+}
+
+.blue-background {
+    background-color: #2800a0;
+    border-radius: 0em;
+}
+
+.green-background {
+    background-color: #00d66c;
+    border-radius: 0em;
+}
+
+div article {
+    flex-shrink: 0;
+    width: 13em;
+    margin: 1em;
+}
+
+article > h2 {
+    background-color: white;
+    color: #00d66c;
+
+}
+
+section > h2 {
+    font-size: 1.4em;
+    color: white;
+    background: #ff3268;
+    border: 1em;
+}
+
+article {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 0.5em 0 0.5em;
+    margin-bottom: 0.9em;
+    margin-right: 1em;
+    color: #00d66c;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    font-size: 1em;
+    position: relative;
+}
+
+article button {
+    background-image: url(images/heart%20icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 2em;
+    height: 2em;
+    margin-left: 14em;
+    margin-top: -3.5em;
+    position: absolute;
+    transition: 0.5s ease;
+
+}
+
+article button:hover {
+    background-color: white;
+    transform: scale(1.1)
+}
+
+article button.redheart {
+    background-image: url(images/red%20heart.png);
+}
+
+
+article > p {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    background-color: #00d66c;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: -0.1em;
+
+}
+
+nav ul li {
+    margin-left: 0.5em;
+}
+
+nav img {
+    width: 12em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-content: flex-start;
+
+}
+
+nav ul a {
+    background-image: url(images/home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -666em;
+    border: none;
+    width: 2em;
+    height: 2em;
+    display: block;
+}
+
+nav ul li:nth-of-type(2) a {
+    background-image: url(images/profile-2-white.png);
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    color: #2800a0;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    position: relative;
+}
+
+footer > img {
+    display: flex;
+}
+
+footer button {
+    background-image: url(images/download%20icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    transition: 0.5s ease;
+    margin-left: 14em;
+    margin-top: 1em;
+}
+
+@media(min-width: 64em) {
+
+    header {
+        background: url(images/vacation%201.jpg) no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30em;
+        padding-top: 1em;
+    }
+
+    header h1 {
+        width: 6em;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul a {
+        text-indent: 0em;
+        padding: 0em 0em 0em 1em;
+    }
+
+    main section {
+        width: 60em;
+        margin: auto;
+    }
+}
+
+@media(min-width: 30em) {
+    header h1 {}
+
+}
+
+nav ul a {
+    text-indent: 0em;
+    padding: 0em 3em 0em 2.5em;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00d66c;
+    border-radius: 0.7em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5e40b8;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #2800a0;
+}

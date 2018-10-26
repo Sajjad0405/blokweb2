@@ -1,0 +1,20 @@
+@media (max-width: 30em) {
+
+    .tablet article img {
+        display: none;
+    }
+
+    .desktop article img {
+        display: none;
+    }
+}
+
+@media (min-width: 64em) {
+
+    .mobiel article img {
+        display: none;
+    }
+    .tablet article img {
+        display: none;
+    }
+}
