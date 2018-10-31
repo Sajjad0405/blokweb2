@@ -10,6 +10,147 @@ main {
     background: #F4E6D8;
 }
 
+/*Begin - verhaal-detail*/
+
+.verhaal-main h1 {
+    color: #75c7d5;
+    background-color: transparent;
+    font-size: calc(3.5vw + 4.8em);
+    flex-direction: column;
+    margin: auto;
+    width: 2.8em;
+    align-items: center;
+    padding-top: 0em;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.verhaal-main,
+.verhaal-body {
+    background-color: #F4E6D8;
+}
+
+.verhaal-main header {
+    background-image: none;
+    padding: 0;
+}
+
+/*
+.verhaal-main header h1 {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+*/
+
+.verhaal-main header h1::first-letter {
+    color: #ed771a;
+    margin-right: 0.5em;
+}
+
+.alinea-1,
+.alinea-2,
+.alinea-3,
+.alinea-4 {
+    background-color: #ed771a;
+    border-radius: 0.5em;
+    width: 20em;
+    position: relative;
+    display: flex;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alinea-4 {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.alinea-2,
+.alinea-3,
+.alinea-4 {
+    display: none;
+}
+
+.alinea-2-active,
+.alinea-3-active,
+.alinea-4-active {
+    display: flex;
+}
+
+.alinea-1 p,
+.alinea-2 p,
+.alinea-3 p,
+.alinea-4 p {
+    color: white;
+    padding: 0.4em;
+}
+
+.alinea-1 p::first-letter,
+.alinea-2 p::first-letter,
+.alinea-3 p::first-letter {
+    color: #75c7d5;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.alinea-1 a,
+.alinea-2 a,
+.alinea-3 a {
+    display: flex;
+    width: 0;
+    white-space: nowrap;
+    position: absolute;
+    text-align: right;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+    z-index: 1;
+    margin-left: 19.5em;
+    margin-top: 4em;
+    text-decoration: none;
+    color: white;
+    opacity: 0.4
+}
+
+.alinea-2 a {
+    margin-left: 16em;
+    transform: rotate(0deg);
+    margin-top: 9.1em;
+    background-color: #ed771a;
+    opacity: 0.3;
+}
+
+.alinea-3 a {
+    transform: rotate(0deg);
+    margin-left: 15em;
+    margin-top: 20em;
+    font-size: 0.5em;
+    opacity: 0.3;
+
+}
+
+/*Eind verhaal*/
+
+/*Favoriet-pagina :Start*/
+
+.fav-header {
+    background: none;
+    background-color: #2800a0;
+}
+
+.fav-header h1 {
+    color: white;
+    margin-bottom: -0.5em;
+    padding: 0.5em;
+    margin-top: -0.5em;
+}
+
+/*Favoriet-pagina :Einde*/
+
+/*Algemeen header :Start*/
+
 header {
     background: url(images/vacation%201.jpg) no-repeat;
     background-position: center;
@@ -20,13 +161,14 @@ header {
 header h1 {
     border-radius: 0.4em;
     padding: 0.8em;
-    font-size: calc(3.5vw + .8em);
+    font-size: calc(3.5vw + 1.8em);
     color: white;
     margin-right: auto;
     margin-left: 0;
-    width: 6em;
     margin-top: 0;
 }
+
+/*Algemeen header :Einde*/
 
 p {
     font-size: 0.8em;
@@ -34,59 +176,61 @@ p {
 }
 
 
-/*
+/*Favoriet-empty :Start*/
 
-legend {
-    font-weight: bold;
-}
-
-fieldset {
-
-    background-color: #F4E6D8;
-    border: none;
-    border-radius: 5px;
-}
-
-fieldset button {
-    background-color: gainsboro;
-    padding: 0.417em;
-    margin: 1.25em;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 8.33em;
-    height: 4em;
-    display: block;
+.fav-empty h3 {
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-
 }
 
-fieldset input[type="submit"]:hover {
-    color: white;
-    background-color: #5e40b8;
-    box-shadow: none;
-}
-
-fieldset input[type="submit"]:active {
-    color: white;
-    background-color: #2800a0;
-    box-shadow: none;
-}
-
-input[type="submit"] {
-    padding: 0.833em 2.083em 1em;
-    background-color: #ff3268;
-    box-shadow: inset 0 -5px #ca2b55;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    display: block;
+.fav-empty a {
     text-decoration: none;
+    background-color: #00d66c;
+    border-radius: 1em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5em;
+    width: 7.3em;
+    height: 3em;
+    font-size: 1.1em;
+    color: white;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
 }
-*/
 
-.zoeken {
-    background-color: #2800a0;
+/*Favoriet-epmty :Einde*/
+
+/*Terug knop bij verhaal :Begin*/
+
+.div-terug {
+    margin-bottom: 1em;
+    padding-bottom: 0;
 }
+
+div .terug {
+    text-decoration: none;
+    background-color: #00d66c;
+    border-radius: 1em;
+    display: flex;
+    margin-left: 1.8em;
+    margin-top: 0.5em;
+    width: 7em;
+    height: 2em;
+    font-size: 1.1em;
+    color: white;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+/*Terug knop bij verhaal  ;Einde*/
+
+/*Verhalen in de overflow-x : Begin*/
 
 section {
     padding: 1em;
@@ -165,9 +309,6 @@ article {
     margin-bottom: 0.9em;
     margin-right: 1em;
     color: #00d66c;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     font-size: 1em;
     position: relative;
@@ -202,13 +343,27 @@ article > p {
     color: black;
 }
 
+article img {
+    width: 13em;
+    height: 13em;
+}
+
 img {
     max-width: 100%;
 }
 
+.NewDownload {
+    background-image: url(images/check.png);
+}
+
+/*Verhalen in de overflow-x : Einde*/
+
+/*Navigatie van de hele website : Begin*/
+
 nav {
     background-color: #00d66c;
     display: flex;
+    padding-top: 0.3em;
 }
 
 nav ul {
@@ -216,11 +371,12 @@ nav ul {
     justify-content: flex-end;
     margin-left: auto;
     margin-top: -0.1em;
-
 }
 
 nav ul li {
     margin-left: 0.5em;
+    position: relative;
+    margin-bottom: -1em;
 }
 
 nav img {
@@ -229,7 +385,6 @@ nav img {
     flex-direction: column;
     margin-left: 0;
     justify-content: flex-start;
-
 }
 
 nav ul a {
@@ -241,6 +396,8 @@ nav ul a {
     width: 2em;
     height: 2em;
     display: block;
+    color: white;
+    padding-right: 1em;
 }
 
 nav ul li:nth-of-type(2) a {
@@ -256,6 +413,141 @@ ul a {
     text-decoration: none;
 }
 
+.fav-circle {
+    color: white;
+    background-color: red;
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0em;
+    border-radius: 50%;
+    /margin-top: -2.5em;
+    /margin-left: 1.6em;
+    position: absolute;
+    top: 0;
+    left: 1.5em;
+    text-align: center;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: hidden;
+}
+
+/*Navigatie van de hele pagina :Einde*/
+
+/*Melding opslaan verhaal aan favorieten :Start*/
+
+.popup {
+    background-color: #00d66c;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: .75rem;
+    transition: opacity .2s ease-out, .5s ease-out;
+    opacity: 0;
+    width: 21em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.popup-clicked {
+    opacity: 1;
+    max-height: 5rem;
+}
+
+.popup p {
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+/*Melding opslaan verhaal aan favorieten :Einde*/
+
+.login-main {
+    background: transparent;
+}
+
+/*form : Begin*/
+
+form {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 8em auto 0em auto;
+    border-radius: 0.5em;
+    flex-direction: column;
+}
+
+form p a {
+    color: #2800a0;
+}
+
+fieldset {
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+legend {
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    padding: 1.1em 0.5em;
+    color: #1f1799;
+    font-size: 1.7em;
+    background: white;
+    border-radius: 0.5em 0.5em 0 0;
+    margin-bottom: 1em;
+}
+
+label {
+    font-size: 1.2em;
+    
+}
+
+input[type="text"] {
+    height: 3em;
+    width: 9em;
+    font-size: 1.em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: #8397ae solid 1px;
+    padding: 0 0 0 1em;
+    color: #666;
+}
+
+input[type="submit"] {
+    margin-top: .7rem;
+    width: auto;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    background: #FF3268;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    margin-bottom: 1rem;
+}
+
+
+/*Form :Einde*/
+
+/*Footer van de verhalen en de pagina : Start*/
+
 footer {
     display: flex;
     flex-direction: column;
@@ -263,7 +555,7 @@ footer {
     position: relative;
 }
 
-footer > img {
+.footer > img {
     display: flex;
 }
 
@@ -278,11 +570,76 @@ footer button {
     position: absolute;
     transition: 0.5s ease;
     margin-left: 14em;
-    margin-top: 1em;
+    margin-top: 0.8em;
 }
+
+footer ul {
+    padding: 0;
+}
+
+footer ul a {
+    color: #909090;
+    display: flex;
+}
+
+footer h3 {
+    color: #202020;
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+}
+
+.footer-last {
+    display: flex;
+    width: 10em;
+    margin-bottom: 0.3em;
+    flex-direction: column;
+    padding-left: 3em;
+}
+
+.footer-last > img {
+    width: 10em;
+}
+
+/*Footer van de pagina en de pagina :Einde*/
+
+/*Footer-favorieten-empty :Start*/
+
+.fav-footer {
+    margin-top: 15em;
+}
+
+/*Footer-favorieten-empty :Einde*/
+
+/*Desktop weergave*/
 
 @media(min-width: 64em) {
 
+    /*Verhaal-detail :Start*/
+    .verhaal-header {
+        background-image: none;
+        margin-bottom: -25em;
+        margin-top: -1em;
+    }
+
+    .verhaal-main header {
+        margin-bottom: -21em;
+        margin-top: -10em;
+    }
+
+    .verhaal-main h1 {
+        color: #75c7d5;
+        background-color: transparent;
+        font-size: 6em;
+        flex-direction: column;
+        margin: auto;
+        width: 2.8em;
+        align-items: center;
+        padding-top: 0em;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    /*Verhaal-detail :Einde*/
     header {
         background: url(images/vacation%201.jpg) no-repeat;
         background-position: center;
@@ -303,10 +660,13 @@ footer button {
         overflow: hidden;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-top: -1.1em;
     }
 
     nav ul a {
-        text-indent: 0em;
+        text-indent: 666em;
         padding: 0em 0em 0em 1em;
     }
 
@@ -314,17 +674,249 @@ footer button {
         width: 60em;
         margin: auto;
     }
+    /*Form*/
+    form {
+        max-width: 40%;
+    }
+
+    /*Footer-favorieten-empty :Start*/
+    .fav-footer {
+        margin-top: 13.5em;
+    }
+
+    /*Footer-favorieten-empty :Einde*/
+    /*Verhaal detial :Begin*/
+    .alinea-1,
+    .alinea-2,
+    .alinea-3,
+    .alinea-4 {
+
+        font-size: 1.3em;
+        width: 25em;
+    }
+
+    .alinea-2 {
+        margin-left: 20em;
+    }
+
+    .alinea-4 {
+        margin-left: 10em;
+    }
+
+    .alinea-1 a,
+    .alinea-2 a,
+    .alinea-3 a {
+        display: flex;
+        width: 0;
+        white-space: nowrap;
+        position: absolute;
+        text-align: right;
+        transform-origin: bottom;
+        transform: rotate(90deg);
+        z-index: 1;
+        margin-left: 24.3em;
+        margin-top: 2.8em;
+        text-decoration: none;
+        color: white;
+        opacity: 0.4
+    }
+
+    .alinea-2 a {
+        margin-left: 21.2em;
+        transform: rotate(0deg);
+        margin-top: 7em;
+        background-color: #ed771a;
+        opacity: 0.3;
+    }
+
+    .alinea-3 a {
+        transform: rotate(0deg);
+        margin-left: 25em;
+        margin-top: 15.2em;
+        font-size: 0.5em;
+        opacity: 0.3;
+    }
+
+    .div-terug {
+        margin-bottom: 10em;
+        padding-bottom: 0;
+    }
+
+    div .terug {
+        text-decoration: none;
+        background-color: #00d66c;
+        border-radius: 1em;
+        display: flex;
+        margin-left: 2em;
+        width: 7em;
+        height: 2em;
+        font-size: 1.1em;
+        color: white;
+        align-items: center;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+    /*Verhaal detail: Einde*/
+    /*Favoriet-empty :Start*/
+    .fav-header {
+        height: 8em;
+    }
+
+    .fav-empty h3 {
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .fav-empty a {
+        text-decoration: none;
+        background-color: #00d66c;
+        border-radius: 1em;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -0.5em;
+        width: 7.3em;
+        height: 3em;
+        font-size: 1.1em;
+        color: white;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /*Favoriet-epmty :Einde*/
 }
 
-@media(min-width: 30em) {
-    header h1 {}
+/*Tablet weergave*/
 
+@media(min-width: 36.125em) {
+
+    /*form*/
+    form {
+        width: 60%;
+        align-items: center;
+    }
+
+    /*Verhaal detial :Einde*/
+    .alinea-1,
+    .alinea-2,
+    .alinea-3,
+    .alinea-4 {
+
+        font-size: 1.3em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30em;
+    }
+
+    .alinea-1 a,
+    .alinea-2 a,
+    .alinea-3 a {
+        display: flex;
+        width: 0;
+        white-space: nowrap;
+        position: absolute;
+        text-align: right;
+        transform-origin: bottom;
+        transform: rotate(90deg);
+        z-index: 1;
+        margin-left: 29.3em;
+        margin-top: 1.7em;
+        text-decoration: none;
+        color: white;
+        opacity: 0.6;
+    }
+
+    .alinea-2 a {
+        margin-left: 26.2em;
+        transform: rotate(0deg);
+        margin-top: 7em;
+        background-color: #ed771a;
+        opacity: 0.3;
+    }
+
+    .alinea-3 a {
+        transform: rotate(0deg);
+        margin-left: 29em;
+        margin-top: 15.2em;
+        font-size: 0.5em;
+        opacity: 0.2;
+    }
+    /*Verhaal detail : Einde*/
+    .verhaal-main h1 {
+        color: #75c7d5;
+        background-color: transparent;
+        font-size: 6em;
+        flex-direction: column;
+        margin: auto;
+        width: 2.8em;
+        align-items: center;
+        padding-top: 0em;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .div-terug {
+        padding-bottom: 0;
+    }
+
+    div .terug {
+        text-decoration: none;
+        background-color: #00d66c;
+        border-radius: 1em;
+        display: flex;
+        margin-left: 2em;
+        width: 7em;
+        height: 2em;
+        font-size: 1.1em;
+        color: white;
+        align-items: center;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /*Favoriet-empty :Start*/
+    .fav-empty h3 {
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .fav-empty a {
+        text-decoration: none;
+        background-color: #00d66c;
+        border-radius: 1em;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -0.5em;
+        width: 7.3em;
+        height: 3em;
+        font-size: 1.1em;
+        color: white;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /*Favoriet-epmty :Einde*/
+    /*Footer-favorieten-empty :Start*/
+    .fav-footer {
+        margin-top: 16em;
+    }
+
+    /*Footer-favorieten-empty :Einde*/
 }
 
-nav ul a {
-    text-indent: 0em;
-    padding: 0em 3em 0em 2.5em;
-}
+
+/*Gestylde scrollbar*/
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

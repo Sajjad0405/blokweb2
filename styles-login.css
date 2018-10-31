@@ -2,28 +2,8 @@
     box-sizing: border-box;
 }
 
-form {
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-
-}
-
 form:invalid {
     background: white;
-}
-fieldset {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1em;
-    border: none;
-    transition: all .2s;
-    padding: 1em;
-    background: PaleGreen;
-    border-radius: 0.5em;
 }
 
 input[type=text] {
